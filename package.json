@@ -1,0 +1,12 @@
+{
+  "name": "css",
+  "version": "1.0.0",
+  "description": "* cursor\r     * 마우스 올렸을 때 커서 아이콘\r * user-select \r     * all 한번 클릭으로 드래그\r     * text 텍스트 선택 가능\r     * none 텍스트 선택 안됨\r     * auto 브라우저 허용시 텍스트 선택 가능",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

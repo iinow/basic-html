@@ -1,0 +1,17 @@
+div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.a {
+    background-color: aqua;
+}
+
+.b {
+    background-color: blue;
+}
+
+.c {
+    background-color: cornflowerblue;
+}
