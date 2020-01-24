@@ -1,9 +1,13 @@
+/* font-family (1), (2), (3), 
+  1 번이 없으면 2 번 폰트 2번이 없으면 3번 폰트로 적용된다. 우선순위..
+ */
 * {
     font-family: "Work Sans", sans-serif;
   }
   
   html,
   body {
+    margin: 0;
     height: 100%;
     color: #1a1b1c;
   }
@@ -11,7 +15,7 @@
   label,
   a {
     cursor: pointer;
-    user-select: all;
+    user-select: none;
     text-decoration: none;
     display: inline-block;
     color: inherit;
@@ -30,7 +34,7 @@
     width: 100%;
     overflow: hidden;
     grid-template-rows: 50px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
   
   input[type="radio"] {

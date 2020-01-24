@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            DOM
+        </title>
+        <style>
+            div {
+                height: 60px; 
+                width: 60px;
+                overflow: auto;
+            }
+
+            p {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <a href="#">Hi</a> -->
+        <!-- <p>Hi</p> -->
+
+        <div>
+            <content>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+                <p>6</p>
+                <p>7</p>
+                <p>8</p>
+                <p>9</p>
+                <p>10</p>
+            </content>
+        </div>
+        <button>상단 이동</button>
+        <script>
+            // console.log(document.doctype.nodeName, document.doctype.nodeType)
+            // console.log(Node.DOCUMENT_NODE)
+            // console.log(document.nodeName, document.nodeType)
+            // console.log(document.querySelector('a').firstChild.nodeValue)
+
+            // let elementNode = document.createElement('strong')
+            // let textNode = document.createTextNode(' Dude')
+
+            // document.querySelector('p').appendChild(elementNode)
+            // document.querySelector('strong').appendChild(textNode)
+            
+            // document.querySelector('content').children[4].scrollIntoView(false)
+            //true 는 기본 값으로 top 으로 스크롤 한다. false 는 bottom 으로 스크롤 한다. 
+            document.querySelector('content').scrollIntoView(true)
+            document.querySelector('button').addEventListener('click', () => {
+                document.querySelector('content').children[0].scrollIntoView(true)
+            })
+        </script>
+    </body>
+</html>

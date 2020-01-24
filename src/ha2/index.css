@@ -1,19 +1,30 @@
-body {
-    width: 600px;
-    margin: 0 auto;
-    background-color: #FF9500;
-    padding: 0 20px 20px 20px;
-    border: 5px solid black;
+.logo-template {
+    width: 500px;
+    background-color: #888888;
+    display: inline-block;
+    /* display: grid;
+    grid-template-columns: 100px 350px auto; */
 }
 
-.a {
+.logo-template > div {
+    display: inline-block;
+    height: 100%;
+}
+
+.logo-info {
+    /* width: 50px; */
+    /* line-height: 100px; */
+    text-align: center;
+    /* vertical-align: middle; */
+}
+
+.empty-logo {
     width: 100px;
     height: 100px;
+    background-color: blueviolet;
 }
 
-h1 {
-    margin: 0;
-    padding: 20px 0;    
-    color: #00539F;
-    text-shadow: 3px 3px 1px black;
+.logo-template button {
+    display: block;
+    /* margin-bottom: 10px; */
 }

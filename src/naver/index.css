@@ -1,0 +1,38 @@
+body {
+    /* background-color: aqua; */
+}
+
+/* div 생략 가능함 div 외의 태그들은 무조건 작성해줘야한다.  */
+div#header-center {
+    margin: 0 auto;
+    width: 1080px;
+    /* display: inline-block; */
+}
+
+div#header-search > h1 {
+    width: 280px;
+    display: inline-block;
+}
+
+/* div#header-center h1 {
+
+} */
+
+#header-search h2 {
+    display: none;
+    /* visibility: hidden; */
+}
+
+#header-search fieldset {
+    display: inline-block;
+    width: 520px;
+}
+
+.blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
