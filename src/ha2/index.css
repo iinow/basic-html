@@ -1,4 +1,5 @@
 .logo-template {
+    position: absolute;
     width: 500px;
     background-color: #888888;
     display: inline-block;
@@ -6,16 +7,29 @@
     grid-template-columns: 100px 350px auto; */
 }
 
-.logo-template > div {
-    display: inline-block;
-    height: 100%;
+.logo-btn {
+    position: absolute;
+    left: 60%;
+    /* top: 50%; */
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    left: 30%;
 }
 
 .logo-info {
+    position: absolute;
     /* width: 50px; */
     /* line-height: 100px; */
     text-align: center;
     /* vertical-align: middle; */
+    top: 30%;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .empty-logo {

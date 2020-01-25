@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.container {
+    display: flex;
+}
+
+.item {
+    text-align: center;
+}
+
+.itemA {
+    background-color: red;
+}
+
+.itemB {
+    background-color: blue;
+}
+
+.itemC {
+    background-color: green;
+}

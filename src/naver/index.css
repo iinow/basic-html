@@ -11,7 +11,12 @@ div#header-center {
 
 div#header-search > h1 {
     width: 280px;
+    height: 48px;
     display: inline-block;
+    background-image: url('');
+    background-position: -4px -10px;
+    text-indent: 100%;
+    overflow: hidden;
 }
 
 /* div#header-center h1 {
