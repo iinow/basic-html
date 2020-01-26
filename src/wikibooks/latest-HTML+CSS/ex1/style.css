@@ -5,6 +5,9 @@
     --accent-color: #BF6A7A;
     --dark-color: #2B5566;
     --text-bright-color: #fff;
+    --icon-color: #fff;
+    --icon-bk-color: #ddd;
+    --large-width: 1000px;
 }
 
 body {
@@ -89,8 +92,177 @@ body {
     text-decoration: none;
 }
 
+.conB .icon {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 40px;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ddd;
+    background-color: var(--icon-bk-color);
+    color: #fff;
+    color: var(--icon-color);
+}
+
+.conB .text {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+}
+
+.conB .container {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
 .conB a:hover {
     text-decoration: underline;
+}
+
+.conC {
+    background-color: #5D9AB2;
+    background-color: var(--main-color);
+    color: #fff;
+    color: var(--text-bright-color);
+}
+
+.conC .text {
+    padding: 20px;
+}
+
+.conC h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.conC p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+.conC a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: solid 3px currentColor;
+    border-radius: 6px;
+    background-color: #BF6A7A;
+    background-color: var(--accent-color);
+    color: #fff;
+    color: var(--text-bright-color);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.conC a:hover {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.2)
+    );
+}
+
+.conC .photo {
+    min-height: 200px;
+    background-image: url('https://img5.goodfon.com/wallpaper/nbig/6/e0/bmw-m3-f80-red-light-sight-predator-face-fronte.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/*
+.conD {
+    background-color: #5D9AB2;
+    background-color: var(--main-color);
+    color: #fff;
+    color: var(--text-bright-color);
+}
+*/
+
+.conD {
+/*
+    background-color: #BF6A7A;
+    background-color: var(--accent-color);
+*/
+    background-image: url('')
+}
+
+.conD .container {
+    padding-top: 2px;
+}
+
+.conD .text {
+    padding: 20px;
+}
+
+.conD h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.conD p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+.conD a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: solid 3px currentColor;
+    border-radius: 6px;
+    background-color: #BF6A7A;
+    background-color: var(--accent-color);
+    color: #fff;
+    color: var(--text-bright-color);
+    font-size: 14px;
+    text-decoration: none;
+    box-shadow: 0 0 0 1px #888;
+}
+
+.conD a:hover {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.2)
+    );
+}
+
+.conD .photo {
+    min-height: 200px;
+    background-image: url('https://img5.goodfon.com/wallpaper/nbig/7/ec/zaiats-zaichik-priroda-seryi-boke-svet.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .conD .container {
+        display: flex;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        flex-direction: row-reverse
+    }
+    
+    .conD .photo {
+        flex: 0 0 400px;
+    }
+    
+    .conD .text {
+        flex: 2;
+        padding: 50px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -100,5 +272,272 @@ body {
     
     .conA p {
         font-size: 24px;
+    }
+    
+    .conB .container {
+        display: flex;
+        max-width: 1000px;
+        max-width: var(--large-width);
+/*        margin: 0 auto;*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .conB .text {
+        flex: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .conC .container {
+        display: flex;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .conC .photo {
+        flex: 3;
+    }
+    
+    .conC .text {
+        flex: 2;
+        padding: 50px;
+    }
+}
+
+.footA {
+    margin-bottom: 30px;
+}
+
+.footA h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.footA p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.footA a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+footer {
+    color: #fff;
+    color: var(--text-bright-color);
+    background-color: #2B5566;
+    background-color: var(--dark-color);
+}
+
+footer .container {
+    padding: 40px 20px;
+}
+
+.footB div {
+    margin-bottom: 20px;
+}
+
+.footB h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: solid 1px currentColor;
+    font-size: 14px;
+}
+
+.footB ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footB a {
+    display: block;
+    padding: 5px;
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footB a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+    .footB {
+        display: flex;
+    }
+    
+    .footB div {
+        flex: 1;
+    }
+    
+    .footB div:not(:first-child) {
+        margin-left: 40px;
+    }
+}
+
+.footC {
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+@media (min-width: 768px) {
+    footer .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .footA {
+        flex: 0 0 40%;
+    }
+    
+    .footB {
+        flex: 0 0 60%;
+    }
+    
+    .footC {
+        flex: 0 0 100%;
+    }
+}
+
+.footD {
+    margin-top: 20px;
+}
+
+.footD a {
+    text-decoration: none;
+}
+
+.footD ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footD a {
+    display: block;
+    margin-right: 8px;
+    padding: 0;
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    border: solid 1px currentColor;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.footD a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.headA {
+    display: inline-block;
+    line-height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #5D9AB2;
+    background-color: var(--main-color);
+    color: #fff;
+    color: var(--text-bright-color);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.headB ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.headB a {
+    display: block;
+    padding: 15px;
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.headB a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .headB ul {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    /*  큰 화면 전용 설정  */
+    .headC {
+        display: none;
+    }
+    
+    .headB {
+        display: block !important;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container-small {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .headC {
+        margin-right: 10px;
+        padding: 0;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 28px;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    
+    .headC:hover {
+        opacity: 0.3;
+    }
+    
+    .headB {
+        display: none;
     }
 }
